@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 21 de septiembre❤️ ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ...[ESTILOS OMITIDOS PARA BREVIDAD: Usa el CSS original proporcionado]... */
+    </style>
+</head>
+<body>
+
+    <div class="start-screen" id="startScreen">
+        <h1 class="start-title">Un regalo para ti ❤️</h1>
+        <button class="start-button" id="startBtn">Abrir</button>
+    </div>
+
+    <div class="flotantes-container" id="flotantesContainer"></div>
+    <!-- 40 luces (partículas de fondo) -->
+    <div class="light light-1"></div><div class="light light-2"></div><div class="light light-3"></div><div class="light light-4"></div><div class="light light-5"></div><div class="light light-6"></div><div class="light light-7"></div><div class="light light-8"></div><div class="light light-9"></div><div class="light light-10"></div><div class="light light-11"></div><div class="light light-12"></div><div class="light light-13"></div><div class="light light-14"></div><div class="light light-15"></div><div class="light light-16"></div><div class="light light-17"></div><div class="light light-18"></div><div class="light light-19"></div><div class="light light-20"></div><div class="light light-21"></div><div class="light light-22"></div><div class="light light-23"></div><div class="light light-24"></div><div class="light light-25"></div><div class="light light-26"></div><div class="light light-27"></div><div class="light light-28"></div><div class="light light-29"></div><div class="light light-30"></div><div class="light light-31"></div><div class="light light-32"></div><div class="light light-33"></div><div class="light light-34"></div><div class="light light-35"></div><div class="light light-36"></div><div class="light light-37"></div><div class="light light-38"></div><div class="light light-39"></div><div class="light light-40"></div>
+
+    <div class="main-content animation-paused" id="mainContainer">
+        <h1 class="main-title">Feliz 21 de septiembre❤️</h1>
+        <div class="sunflower-container">
+            <div class="sunflower">
+                <div class="flower_wrapper">
+                    <div class="flower_stem"></div>
+                    <div class="flower_center">
+                        <div class="center_dot center_dot-1"></div><div class="center_dot center_dot-2"></div><div class="center_dot center_dot-3"></div><div class="center_dot center_dot-4"></div><div class="center_dot center_dot-5"></div><div class="center_dot center_dot-6"></div><div class="center_dot center_dot-7"></div><div class="center_dot center_dot-8"></div>
+                    </div>
+                    <div class="flower_petal flower_petal-1"></div><div class="flower_petal flower_petal-2"></div><div class="flower_petal flower_petal-3"></div><div class="flower_petal flower_petal-4"></div><div class="flower_petal flower_petal-5"></div><div class="flower_petal flower_petal-6"></div><div class="flower_petal flower_petal-7"></div><div class="flower_petal flower_petal-8"></div><div class="flower_petal flower_petal-9"></div><div class="flower_petal flower_petal-10"></div><div class="flower_petal flower_petal-11"></div><div class="flower_petal flower_petal-12"></div>
+                    <div class="flower_leaf flower_leaf-1"></div>
+                    <div class="flower_leaf flower_leaf-2"></div>
+                </div>
+            </div>
+        </div>
+        <section class="love-message-section">
+            <div class="love-message-content">
+                <h2>Mi girasol 🌻</h2>
+                <p>Hoy, 21 de septiembre quiero recordarte lo especial que eres para mí. Así como los girasoles buscan la luz del sol, yo busco siempre tu sonrisa y tu amor. Gracias por llenar mis días de alegría, esperanza y color. Cada momento contigo es un regalo, y cada día a tu lado florezco un poco más.</p>
+                <p>Te amo con todo mi corazón. Feliz día, mi amor. Que siempre encuentres razones para sonreír y que nunca te falte luz ni calor en tu vida. Eres mi sol, mi girasol, mi razón de ser.</p>
+                <img class="footer-image" src="https://www.dl.dropboxusercontent.com/scl/fi/fl2r4nxntvp5g6d1259li/GIRASOLFONDO.png?rlkey=gxwqa1g0gd34r3k0j6v506gd1&st=p40j52o7" alt="Girasol">
+            </div>
+        </section>
+    </div>
+
+    <!-- Botón de música -->
+    <button id="musicButton" aria-label="Reproducir música">
+        <svg id="playIcon" viewBox="0 0 32 32"><polygon points="6,4 26,16 6,28"></polygon></svg>
+        <svg id="pauseIcon" viewBox="0 0 32 32"><rect x="6" y="4" width="6" height="24"></rect><rect x="20" y="4" width="6" height="24"></rect></svg>
+    </button>
+    <audio id="audioPlayer" loop>
+        <source src="https://www.dl.dropboxusercontent.com/scl/fi/4uw9g8a0b6q4ddq23d5kl/song21sep.mp3?rlkey=fp5xw5g3o7bqg3f0ogt5s6e1m&st=5h6r2w22" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script>
+        // Pantalla de inicio (bienvenida)
+        const startScreen = document.getElementById('startScreen');
+        const startBtn = document.getElementById('startBtn');
+        const mainContainer = document.getElementById('mainContainer');
+        startBtn.addEventListener('click', () => {
+            startScreen.classList.add('hidden');
+            mainContainer.classList.remove('animation-paused');
+        });
+
+        // Botón de música
+        const musicButton = document.getElementById('musicButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        let isPlaying = false;
+
+        musicButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        });
+
+        audioPlayer.addEventListener('play', () => {
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+            isPlaying = true;
+        });
+
+        audioPlayer.addEventListener('pause', () => {
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+            isPlaying = false;
+        });
+
+        // Petalos flotantes dorados
+        function randomBetween(a, b) {
+            return Math.random() * (b - a) + a;
+        }
+        function createPetalo() {
+            const petalos = ['🌻','💛','✨','🌼'];
+            const el = document.createElement('span');
+            el.className = 'petalo';
+            el.innerText = petalos[Math.floor(Math.random() * petalos.length)];
+            el.style.left = `${randomBetween(3, 97)}vw`;
+            el.style.animationDelay = `${randomBetween(0, 10)}s`;
+            el.style.fontSize = `${randomBetween(1.2, 2.2)}rem`;
+            document.getElementById('flotantesContainer').appendChild(el);
+            setTimeout(() => el.remove(), 12000);
+        }
+        setInterval(createPetalo, 1000);
+        for (let i = 0; i < 10; i++) createPetalo();
+
+        // Bloquea scroll mientras está la pantalla de bienvenida
+        document.body.style.overflow = "hidden";
+        startBtn.addEventListener('click', () => {
+            document.body.style.overflow = "auto";
+        });
+
+        // Autoplay en móviles al quitar bienvenida (si es posible)
+        startBtn.addEventListener('click', () => {
+            setTimeout(() => {
+                audioPlayer.play().catch(()=>{});
+            }, 600);
+        });
+    </script>
+</body>
+</html>
